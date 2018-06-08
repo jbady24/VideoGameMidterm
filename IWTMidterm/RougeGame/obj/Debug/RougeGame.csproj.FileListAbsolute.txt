@@ -1,0 +1,16 @@
+c:\users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.CombatScreen.resources
+c:\users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.MainMenu.resources
+c:\users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.Properties.Resources.resources
+c:\users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.csproj.GenerateResource.Cache
+c:\users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.csproj.CoreCompileInputs.cache
+c:\users\badyr\source\repos\IWTMidterm\RougeGame\bin\Debug\RougeGame.exe.config
+c:\users\badyr\source\repos\IWTMidterm\RougeGame\bin\Debug\RougeGame.exe
+c:\users\badyr\source\repos\IWTMidterm\RougeGame\bin\Debug\RougeGame.pdb
+c:\users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.exe
+c:\users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.pdb
+c:\users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.Main.resources
+C:\Users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.EquipmentScreen.resources
+C:\Users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.GameOver.resources
+C:\Users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.InformationScreen.resources
+C:\Users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.YouWin.resources
+C:\Users\badyr\source\repos\IWTMidterm\RougeGame\obj\Debug\RougeGame.csprojResolveAssemblyReference.cache

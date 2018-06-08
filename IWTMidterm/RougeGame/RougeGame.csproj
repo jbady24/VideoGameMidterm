@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0887F66-5019-47F6-A4CA-EB32B53F761D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RougeGame</RootNamespace>
+    <AssemblyName>RougeGame</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BagFullException.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="Characters\Hazuki.cs" />
+    <Compile Include="CombatScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CombatScreen.Designer.cs">
+      <DependentUpon>CombatScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Characters\Ninja.cs" />
+    <Compile Include="Characters\DemonSpawn.cs" />
+    <Compile Include="Characters\Goblin.cs" />
+    <Compile Include="Characters\SwordofHazuki.cs" />
+    <Compile Include="Characters\Wizard.cs" />
+    <Compile Include="Characters\Slime.cs" />
+    <Compile Include="EquipmentScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EquipmentScreen.Designer.cs">
+      <DependentUpon>EquipmentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquippedItems.cs" />
+    <Compile Include="GameManager.cs" />
+    <Compile Include="GameOver.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameOver.Designer.cs">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InformationScreen.Designer.cs">
+      <DependentUpon>InformationScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IArmor.cs" />
+    <Compile Include="Interfaces\IComparable.cs" />
+    <Compile Include="Interfaces\IPotion.cs" />
+    <Compile Include="Interfaces\ISpell.cs" />
+    <Compile Include="Interfaces\IWeapon.cs" />
+    <Compile Include="InventorySlotId.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Items\BronzeChestpiece.cs" />
+    <Compile Include="Items\BronzeGrieves.cs" />
+    <Compile Include="Items\BronzeHelmet.cs" />
+    <Compile Include="Items\BronzeVambraces.cs" />
+    <Compile Include="Items\GoldChestpiece.cs" />
+    <Compile Include="Items\GoldGrieves.cs" />
+    <Compile Include="Items\GoldHelmet.cs" />
+    <Compile Include="Items\GoldSword.cs" />
+    <Compile Include="Items\GoldVambraces.cs" />
+    <Compile Include="Items\HeroGrieves.cs" />
+    <Compile Include="Items\HeroVambraces.cs" />
+    <Compile Include="Items\SlimeBall.cs" />
+    <Compile Include="Potions\SmallPotion.cs" />
+    <Compile Include="Items\HeroChestpiece.cs" />
+    <Compile Include="Items\HeroHelmet.cs" />
+    <Compile Include="Items\HeroSword.cs" />
+    <Compile Include="Items\SoulHelmet.cs" />
+    <Compile Include="Items\SoulSword.cs" />
+    <Compile Include="Main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomEnemyFactory.cs" />
+    <Compile Include="RandomItemFactory.cs" />
+    <Compile Include="Items\BronzeSword.cs" />
+    <Compile Include="Spells\FirstSpell.cs" />
+    <Compile Include="StoredItems.cs" />
+    <Compile Include="YouWin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="YouWin.Designer.cs">
+      <DependentUpon>YouWin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CombatScreen.resx">
+      <DependentUpon>CombatScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquipmentScreen.resx">
+      <DependentUpon>EquipmentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOver.resx">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationScreen.resx">
+      <DependentUpon>InformationScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="YouWin.resx">
+      <DependentUpon>YouWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clouds.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DemonSpawn.jpg" />
+    <None Include="Resources\Goblin.jpg" />
+    <None Include="Resources\Hazuki.jpg" />
+    <None Include="Resources\Ninja.jpg" />
+    <None Include="Resources\Slime.jpg" />
+    <None Include="Resources\SwordofHazuki.jpg" />
+    <None Include="Resources\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wizard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Haru.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Torch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttackSound.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
